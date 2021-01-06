@@ -7,17 +7,14 @@ import sys
 
 
 if __name__ == '__main__':
-    n = int(input())
 
 
-n = int(input())
+    count = 0
+    while n:
+        n &= n << 1
+        count += 1
 
-count = 0
-while n:
-    n &= n << 1
-    count += 1
-
-print(count)
+    print(count)
 
 #print(len(max(bin(int(input().strip()))[2:].split('0'))))
 
